@@ -14,7 +14,11 @@ class Mycard extends StatelessWidget {
           backgroundColor: Colors.teal[900],
           title: Center(child: Text("My Card App")),
         ),
-        body: Center(child: Container()),
+        body: Center(child: SafeArea(
+          child: Container(
+            child:Text("Hello world",style:TextStyle(fontSize:40,color:Colors.yellow),),
+          ),
+        ),),
       ),
     );
   }
