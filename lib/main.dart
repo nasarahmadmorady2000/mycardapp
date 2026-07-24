@@ -15,9 +15,32 @@ class Mycard extends StatelessWidget {
           title: Center(child: Text("My Card App")),
         ),
         body: Center(child: SafeArea(
-          child: Container(
-            child:Text("Hello world",style:TextStyle(fontSize:40,color:Colors.yellow),),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(
+                color: Colors.red,
+                height:100,
+                width:150,
+                child:Text("container 1",style:TextStyle(fontSize:20,color:Colors.yellow),),
+              ),
+              Container(
+                color: Colors.blue,
+                height:100,
+                width:150,
+                child:Text("container 2",style:TextStyle(fontSize:20,color:Colors.yellow),),
+              ),
+              Container(
+                height:100,
+                width:150,
+
+                color:Colors.yellow,
+                child:Text("container 3",style:TextStyle(fontSize: 20,color:Color.fromARGB(255, 228, 6, 154)))
+              )
+            ],
           ),
+          
         ),),
       ),
     );
