@@ -19,9 +19,9 @@ class Mycard extends StatelessWidget {
                 fontFamily: "SourceSan3",
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
-              ),
+                letterSpacing: 10,
             ),
-          ),
+          ),),
         ),
         body: Center(
           child: SafeArea(
