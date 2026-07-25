@@ -12,7 +12,16 @@ class Mycard extends StatelessWidget {
         backgroundColor: Colors.teal[300],
         appBar: AppBar(
           backgroundColor: Colors.teal[900],
-          title: Center(child: Text("My Card App")),
+          title: Center(
+            child: Text(
+              "My Card App",
+              style: TextStyle(
+                fontFamily: "SourceSan3",
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
         ),
         body: Center(
           child: SafeArea(
@@ -43,7 +52,7 @@ class Mycard extends StatelessWidget {
                     fontFamily: "Pacifico",
                   ),
                 ),
-                SizedBox(height:10),
+                SizedBox(height: 10),
                 Text(
                   "flutter Developer",
                   style: TextStyle(
@@ -54,62 +63,57 @@ class Mycard extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height:10,
-                child:
-                Divider(color: Colors.teal[100], thickness: 1, indent: 50, endIndent: 50,),
+                SizedBox(
+                  height: 10,
+                  child: Divider(
+                    color: Colors.teal[100],
+                    thickness: 1,
+                    indent: 50,
+                    endIndent: 50,
+                  ),
                 ),
-                
-               Card(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                child:Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: ListTile(
-                    leading: 
-                      Icon(
-                        Icons.phone,
-                        color: Colors.teal[900],
-                      ),
-                      title: 
-                      Text(
+
+                Card(
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  child: Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: ListTile(
+                      leading: Icon(Icons.phone, color: Colors.teal[900]),
+                      title: Text(
                         "+93 781714886",
                         style: TextStyle(
                           fontSize: 20,
                           color: Colors.teal[900],
                           fontFamily: "SourceSans3",
                         ),
-                      )
-                    
-                  ),
-                )
-               ),
-           Card(
-                  color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                child:Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: ListTile(
-                    leading: 
-              Icon(
-                        Icons.email,
-                        color: Colors.teal[900],
                       ),
-                      title: 
-                      Text(
+                    ),
+                  ),
+                ),
+                Card(
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  child: Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: ListTile(
+                      leading: Icon(Icons.email, color: Colors.teal[900]),
+                      title: Text(
                         "nesar.ahmad@example.com",
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 15,
                           color: Colors.teal[900],
                           fontFamily: "SourceSans3",
                         ),
-                      )
-                    
+                      ),
+                    ),
                   ),
                 ),
-               ),
-                
-        ],
+              ],
+            ),
+          ),
+        ),
       ),
-     ) ) ));
+    );
   }
 }
