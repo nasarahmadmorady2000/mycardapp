@@ -1,0 +1,5 @@
+{
+    "editor.defaultFormatter": "eggnstone.DartFormat",
+    "workbench.colorTheme": "DarkPro",
+    "window.autoDetectColorScheme": true
+}
